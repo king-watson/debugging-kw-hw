@@ -52,6 +52,18 @@ function handleDrop(e) {
     }
 }
 
+
+function resetGame() {
+    console.log('Game reset!');
+
+    // this is the reset for the puzzle peices
+    dropZones.forEach(zone => {
+        while (zone.firstChild) {
+            document.querySelector('.puzzle-pieces').appendChild(zone.firstChild);
+        }
+    });
+}
+
 // event listeners
 // add event handling to each button in the collection of buttons, one at a time
 theButtons.forEach(button => button.addEventListener('click', changeBGImage));
@@ -63,4 +75,10 @@ puzzlePieces.forEach(piece => piece.addEventListener('dragstart', handleStartDra
 dropZones.forEach(zone => zone.addEventListener('dragover', handleDragOver));
 
 // add the drop event handling
+
 dropZones.forEach(zone => zone.addEventListener('drop', handleDrop));
+
+// reset button
+document.querySelector("#resetBut").addEventListener("click", resetGame);
+dropZones.forEach(zone => zone.addEventListener('drop', handleDrop));
+
