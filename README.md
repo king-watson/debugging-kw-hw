@@ -1,5 +1,5 @@
 # Crushing Bugs
-Use the in-class build files and fix the bugs that were discovered in class. Use JS to complete these tasks
+Use the in-class build files and fix the bugs that were discovered in class. First plan out how you are going to approach the two problems. You will have to identify them and think of ways to fix it. Then go ahead and fix it. Use JS to complete the actions and make sure you understand what you are changing. 
 ## Installation
 No Installation is required.
 ## Usage
