@@ -52,6 +52,7 @@ function handleDrop(e) {
     }
 }
 
+
 function resetGame() {
     console.log('Game reset!');
 
@@ -74,7 +75,10 @@ puzzlePieces.forEach(piece => piece.addEventListener('dragstart', handleStartDra
 dropZones.forEach(zone => zone.addEventListener('dragover', handleDragOver));
 
 // add the drop event handling
+
 dropZones.forEach(zone => zone.addEventListener('drop', handleDrop));
 
 // reset button
 document.querySelector("#resetBut").addEventListener("click", resetGame);
+dropZones.forEach(zone => zone.addEventListener('drop', handleDrop));
+
